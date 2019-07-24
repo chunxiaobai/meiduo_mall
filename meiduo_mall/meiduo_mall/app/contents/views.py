@@ -1,9 +1,11 @@
-from django.db.models import Model
+
 from django.shortcuts import render
 
 # Create your views here.
 
+from django.views import View
 
-class Demo(Model):
-    def get(self):
-        return 'index'
+
+class IndexView(View):
+    def get(self, request):
+        return render(request, 'index.html')

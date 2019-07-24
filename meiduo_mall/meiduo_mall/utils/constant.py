@@ -1,0 +1,1 @@
+Image_Code_Time = 300
