@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UserConfig',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +65,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'environment': 'meiduo_mall.utils.jinja2_env.jinja2_environment'
         },
     },
     {
@@ -78,8 +79,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+
         },
-        'environment': 'meiduo_mall..utils.jinja2_env.jinja2_environment'
+
     },
 ]
 
@@ -139,7 +141,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'Ch/Asia'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
@@ -154,7 +156,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
 
 LOGGING = {
     'version': 1,
@@ -196,3 +197,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_USER_MODEL = 'users.User'
