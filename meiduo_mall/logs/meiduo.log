@@ -1,0 +1,236 @@
+WARNING 2019-07-24 03:19:37,441 base 152 Not Found: /
+WARNING 2019-07-24 03:19:37,458 basehttp 124 "GET / HTTP/1.1" 404 2091
+WARNING 2019-07-24 03:19:37,748 base 152 Not Found: /favicon.ico
+WARNING 2019-07-24 03:19:37,749 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2142
+WARNING 2019-07-24 03:24:57,215 base 152 Not Found: /
+WARNING 2019-07-24 03:24:57,239 basehttp 124 "GET / HTTP/1.1" 404 2091
+ERROR 2019-07-24 03:25:02,327 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_mall/meiduo_mall/meiduo_mall/app/users/views.py", line 10, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/backends/django.py", line 31, in __init__
+    super(DjangoTemplates, self).__init__(params)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/backends/base.py", line 29, in __init__
+    "Unknown parameters: {}".format(", ".join(params)))
+django.core.exceptions.ImproperlyConfigured: Unknown parameters: environment
+ERROR 2019-07-24 03:25:02,527 basehttp 124 "GET /register HTTP/1.1" 500 124546
+WARNING 2019-07-24 03:27:14,172 base 152 Not Found: /
+WARNING 2019-07-24 03:27:14,179 basehttp 124 "GET / HTTP/1.1" 404 2091
+ERROR 2019-07-24 03:27:19,859 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_mall/meiduo_mall/meiduo_mall/app/users/views.py", line 10, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/backends/django.py", line 32, in __init__
+    self.engine = Engine(self.dirs, self.app_dirs, **options)
+TypeError: __init__() got an unexpected keyword argument 'environment'
+ERROR 2019-07-24 03:27:20,054 basehttp 124 "GET /register HTTP/1.1" 500 120549
+ERROR 2019-07-24 03:28:28,239 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_mall/meiduo_mall/meiduo_mall/app/users/views.py", line 10, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/backends/django.py", line 32, in __init__
+    self.engine = Engine(self.dirs, self.app_dirs, **options)
+TypeError: __init__() got an unexpected keyword argument 'environment'
+ERROR 2019-07-24 03:28:28,381 basehttp 124 "GET /register HTTP/1.1" 500 120680
+ERROR 2019-07-24 03:28:59,964 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_mall/meiduo_mall/meiduo_mall/app/users/views.py", line 10, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: register.html
+ERROR 2019-07-24 03:29:00,040 basehttp 124 "GET /register HTTP/1.1" 500 95496
+ERROR 2019-07-24 03:35:23,120 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_mall/meiduo_mall/meiduo_mall/app/users/views.py", line 10, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: register.html
+ERROR 2019-07-24 03:35:23,253 basehttp 124 "GET /register HTTP/1.1" 500 95496
+ERROR 2019-07-24 03:35:41,973 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_mall/meiduo_mall/meiduo_mall/app/users/views.py", line 10, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: register.html
+ERROR 2019-07-24 03:35:42,162 basehttp 124 "GET /register HTTP/1.1" 500 95496
+INFO 2019-07-24 03:36:42,334 basehttp 124 "GET /register HTTP/1.1" 200 3466
+INFO 2019-07-24 03:36:42,374 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-07-24 03:36:42,389 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2019-07-24 03:36:42,398 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 75
+INFO 2019-07-24 03:36:42,418 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2019-07-24 03:36:42,422 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-07-24 03:36:42,433 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2019-07-24 03:36:42,439 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2019-07-24 03:36:42,451 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-07-24 03:36:42,459 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 15584
+INFO 2019-07-24 03:36:42,893 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2019-07-24 03:36:42,919 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2019-07-24 03:36:42,923 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2019-07-24 04:04:33,601 base 152 Not Found: /
+WARNING 2019-07-24 04:04:33,629 basehttp 124 "GET / HTTP/1.1" 404 2091
+WARNING 2019-07-24 04:04:33,828 base 152 Not Found: /favicon.ico
+WARNING 2019-07-24 04:04:33,837 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2142
+INFO 2019-07-24 04:04:38,250 basehttp 124 "GET /register HTTP/1.1" 200 3466
+WARNING 2019-07-24 04:25:20,198 base 152 Not Found: /
+WARNING 2019-07-24 04:25:20,224 basehttp 124 "GET / HTTP/1.1" 404 2091
+INFO 2019-07-24 04:25:24,460 basehttp 124 "GET /register HTTP/1.1" 200 4908
+INFO 2019-07-24 04:34:49,699 basehttp 124 "GET / HTTP/1.1" 200 25122
+INFO 2019-07-24 04:34:49,835 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2019-07-24 04:34:49,882 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2019-07-24 04:34:49,882 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2019-07-24 04:34:49,882 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2019-07-24 04:34:49,888 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2019-07-24 04:34:49,914 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2019-07-24 04:34:49,937 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2019-07-24 04:34:49,967 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2019-07-24 04:34:49,974 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1727
+INFO 2019-07-24 04:34:50,042 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2019-07-24 04:34:50,052 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2019-07-24 04:34:50,057 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2019-07-24 04:34:50,060 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2019-07-24 04:34:50,064 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2019-07-24 04:34:50,081 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2019-07-24 04:34:50,091 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2019-07-24 04:34:50,091 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2019-07-24 04:34:50,137 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2019-07-24 04:34:50,491 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2019-07-24 04:34:51,607 base 152 Not Found: /carts/simple/
+WARNING 2019-07-24 04:34:51,614 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 2482
